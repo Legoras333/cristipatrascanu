@@ -1,5 +1,3 @@
-# cristipatrascanu
-Cristi Patrascanu
 <!DOCTYPE html>
 <html lang="ro">
 <head>
@@ -9,7 +7,6 @@ Cristi Patrascanu
   <meta name="description" content="Cristi Pătrașcanu — Web Designer & Developer. Web Design Modern, WordPress, SEO & Marketing Digital, Fotografie & Video. Site-uri premium, elegante și rapide." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Inter + Playfair + Great Vibes (semnătură) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
   <style>
@@ -25,7 +22,6 @@ Cristi Patrascanu
     img{max-width:100%;display:block}
     .container{width:min(1200px,92%);margin:0 auto}
 
-    /* ===== HEADER ===== */
     header{
       position:sticky;top:0;z-index:100;
       background:linear-gradient(90deg,rgba(43,34,27,.96),rgba(60,45,35,.96));
@@ -41,10 +37,9 @@ Cristi Patrascanu
     .menu a:hover{color:#2b221b;background:linear-gradient(90deg,var(--gold-2),var(--gold-3));box-shadow:0 3px 10px rgba(214,162,94,.35)}
     .cta{background:linear-gradient(90deg,var(--gold-2),var(--gold-3));color:#2b221b;font-weight:700;border-radius:999px;padding:.6rem 1rem;box-shadow:0 6px 18px rgba(214,162,94,.45);transition:transform .25s ease}
     .cta:hover{transform:translateY(-1px) scale(1.03)}
-    /* Burger */
     .burger{display:none;width:28px;height:20px;cursor:pointer}
     .burger span{display:block;height:3px;background:#f1e7d6;border-radius:3px;margin:3px 0;transition:.3s}
-    .burger.active span{background:var(--gold-2);} /* vizibil X */
+    .burger.active span{background:var(--gold-2);} 
     .burger.active span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
     .burger.active span:nth-child(2){opacity:0}
     .burger.active span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
@@ -56,7 +51,6 @@ Cristi Patrascanu
       .menu ul{flex-direction:column;gap:1.2rem}
     }
 
-    /* ===== HERO ===== */
     .hero{
       position:relative;height:86vh;display:grid;place-items:center;text-align:center;overflow:hidden;
       background:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
@@ -82,7 +76,6 @@ Cristi Patrascanu
     @keyframes heroZoom{0%{transform:scale(1)}100%{transform:scale(1.08)}}
     @keyframes fadeInUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
 
-    /* ===== SECTIONS ===== */
     section{padding:80px 0}
     .title{font-family:'Playfair Display',serif;font-size:2rem;margin:0 0 .6rem}
     .sub{color:var(--muted);margin:0 0 1.6rem}
@@ -112,22 +105,18 @@ Cristi Patrascanu
     .foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px;padding:24px 0}
     .subfoot{display:flex;align-items:center;justify-content:space-between;padding:14px 0;border-top:1px solid #eadfce;color:#6e645a;font-size:.9rem}
 
-    /* Reveal on scroll */
     .reveal{opacity:0;transform:translateY(18px);transition:.6s ease}
     .reveal.show{opacity:1;transform:translateY(0)}
 
-    /* Responsive grids */
     @media (max-width:1100px){.services{grid-template-columns:repeat(2,1fr)}.portfolio{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.contact{grid-template-columns:1fr}}
     @media (max-width:640px){.portfolio{grid-template-columns:1fr}.services{grid-template-columns:1fr}.row{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
   <header>
     <div class="container nav">
       <a href="#acasa" class="logo" aria-label="Cristi Pătrașcanu">
-        <!-- LOGO: monogramă C aurit + semnătură -->
         <svg viewBox="0 0 820 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cristi Pătrașcanu">
           <defs>
             <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -137,11 +126,8 @@ Cristi Patrascanu
               <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity=".28"/>
             </filter>
           </defs>
-          <!-- Monogramă C -->
           <path d="M86,80c0,38 26,66 64,66c16,0 29,-4 41,-12l-8,-14c-10,7 -21,10 -34,10c-28,0 -46,-20 -46,-50c0,-31 18,-50 46,-50c13,0 24,3 34,10l8,-14c-12,-8 -25,-12 -41,-12c-38,0 -64,28 -64,66z" fill="url(#g)" filter="url(#soft)"/>
-          <!-- Nume semnătură -->
           <text x="170" y="108" font-family="'Great Vibes', cursive" font-size="92" fill="url(#g)" filter="url(#soft)">Cristi Pătrașcanu</text>
-          <!-- Subtitlu mic -->
           <text x="174" y="135" font-family="Inter, sans-serif" font-size="16" fill="#f1e7d6" opacity=".9" letter-spacing=".12em">WEB DESIGNER & DEVELOPER</text>
         </svg>
       </a>
@@ -163,7 +149,6 @@ Cristi Patrascanu
     </div>
   </header>
 
-  <!-- ===== HERO ===== -->
   <section id="acasa" class="hero">
     <div class="inner">
       <h1>Site-uri premium, elegante și rapide</h1>
@@ -183,7 +168,6 @@ Cristi Patrascanu
     </div>
   </section>
 
-  <!-- ===== DESPRE ===== -->
   <section id="despre">
     <div class="container about">
       <div class="card reveal">
@@ -210,7 +194,6 @@ Cristi Patrascanu
     </div>
   </section>
 
-  <!-- ===== SERVICII ===== -->
   <section id="servicii" style="background:linear-gradient(180deg,#fff,#f7efe4)">
     <div class="container">
       <h3 class="title">Servicii</h3>
@@ -236,7 +219,6 @@ Cristi Patrascanu
     </div>
   </section>
 
-  <!-- ===== PORTOFOLIU ===== -->
   <section id="portofoliu">
     <div class="container">
       <h3 class="title">Portofoliu</h3>
@@ -267,7 +249,7 @@ Cristi Patrascanu
     </div>
   </section>
 
-  <!-- ===== CONTACT ===== -->
+  <!--CONTACT -->
   <section id="contact">
     <div class="container contact">
       <div class="reveal">
@@ -302,11 +284,9 @@ Cristi Patrascanu
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer>
     <div class="container foot">
       <div>
-        <!-- Logo mic în footer -->
         <svg viewBox="0 0 820 160" xmlns="http://www.w3.org/2000/svg" style="height:44px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.2))">
           <defs>
             <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -330,8 +310,8 @@ Cristi Patrascanu
       <div>
         <h4 class="title" style="font-size:1.1rem">Contact</h4>
         <ul style="list-style:none;padding:0;margin:0;line-height:2">
-          <li><a href="mailto:cristipetrut@yahoo.com">cristipetrut@yahoo.com</a></li>
-          <li><a href="https://wa.me/40723344369" target="_blank">WhatsApp: 0723 344 369</a></li>
+          <li><a href="mailto:cristipetrut@yahoo.com">Email</a></li>
+          <li><a href="https://wa.me/40723344369" target="_blank">WhatsApp</a></li>
         </ul>
       </div>
     </div>
@@ -342,10 +322,8 @@ Cristi Patrascanu
   </footer>
 
   <script>
-    // Anul curent
     document.getElementById('y').textContent = new Date().getFullYear();
 
-    // Burger & meniu mobil (fix: X + scroll body)
     const burger = document.getElementById('burger');
     const menu = document.getElementById('menu');
     const links = menu.querySelectorAll('a');
@@ -359,12 +337,10 @@ Cristi Patrascanu
     burger.addEventListener('click', toggleMenu);
     burger.addEventListener('keydown', (e)=>{ if(e.key==='Enter' || e.key===' '){ e.preventDefault(); toggleMenu(); }});
 
-    // Închide meniul la click pe link
     links.forEach(l=>l.addEventListener('click', ()=>{
       burger.classList.remove('active'); menu.classList.remove('open'); document.body.style.overflow='auto';
     }));
 
-    // Reveal on scroll
     const obs = new IntersectionObserver((entries)=>{
       entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); obs.unobserve(e.target); }});
     },{threshold:.12});
